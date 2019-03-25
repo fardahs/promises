@@ -28,12 +28,6 @@ fs.pathExists(dir)
         })
   })
   .then(() => {
-    return fs.ensureFile(file)
-         .then(() => {
-            console.log('create file : success!')
-         })
-  })
-  .then(() => {
     return fs.writeJson(file,data)
            .then(() => {
              console.log('success!')
